@@ -1,0 +1,332 @@
+/* TODO(drew): Convert classes to ids */
+html {
+    height: 100%;
+}
+body {
+    font-family: MuseoSans-500;
+    font-weight: normal;
+    font-style: nomral;
+    font-size: 22px;
+    background-image: -webkit-gradient(
+        linear, left top, right top,
+        from(rgba(55, 145, 84, 0.4)),
+        to(rgba(55, 145, 84, 0.6))
+    );
+    background: -moz-linear-gradient(left, rgba(55, 145, 84, 0.4), rgba(55, 145, 84, 0.6));
+    background-image: linear-gradient(
+        linear, left top, right top,s
+        from(rgba(55, 145, 84, 0.4)),
+        to(rgba(55, 145, 84, 0.6))
+    );
+    height: 100%;
+}
+
+a {
+    color: #14662E;
+}
+
+    a:hover {
+        color: #104F24;
+    }
+
+#header .page-header {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#header h1 {
+    display: inline-block;
+}
+
+    #header h1 a {
+        line-height: 100px;
+        vertical-align: bottom;
+        color: #000;
+        display: inline-block;
+        position:relative;
+        font-size: 100px;
+        text-shadow: -1.5px -1.5px 2px #333;
+    }
+
+    #header h1 a:hover {
+        text-decoration: none;
+        color: #176337;
+        text-shadow: -1.5px -1.5px 2px #000;
+    }
+
+    #header h1 a:before, h1 a:after {
+        content: attr(title);
+        color: #fff;
+        position: absolute;
+    }
+
+    #header h1 a:before {
+        top: 1px;
+        left: 1px;
+        opacity: 0.1;
+    }
+
+    #header h1 a:after {
+        top: 2px;
+        left: 2px;
+        opacity: 0.15;
+    }
+
+#content {
+    background-image: url('/static/images/background.png');
+    background-repeat: repeat;
+    border-radius: 12px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    min-height: 310px;
+    position: relative;
+}
+
+div.container {
+    padding-top: 20px;
+}
+
+div#setup {
+    text-align: center;
+}
+
+    div#setup h1 {
+        color: #176337;
+        position: relative;
+        display: inline-block;
+        padding: 1px;
+        margin-bottom: 15px;
+        font-size: 36px;
+        text-shadow: 1px 1px 5px rgba(55, 145, 84, 0.4);
+    }
+
+    div#setup .accordion#expand-details {
+        margin-bottom: 30px;
+    }
+
+        div#setup .accordion#expand-details .accordion-group {
+            border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+
+        div#setup .accordion#expand-details .accordion-inner {
+            border-top: none;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        div#setup .accordion#expand-details .accordion-inner p {
+            margin-top: 18px;
+        }
+
+        div#setup .accordion#expand-details .accordion-inner p:nth-of-type(1) {
+            color: #333;
+        }
+
+        div#setup .accordion#expand-details .accordion-inner p:nth-of-type(2) {
+            color: #282828;
+        }
+
+        div#setup .accordion#expand-details .accordion-inner p:nth-of-type(3) {
+            color: #1e1e1e;
+        }
+
+    div#setup a.add-word {
+        display: block;
+        background-color: #F0F0F0;
+        width: 270px;
+        margin: auto;
+        line-height: 28px;
+        border: 1px solid #D8D8D8;
+        color: #909090;
+        font-size: 16px;
+    }
+
+    div#setup a.add-word img {
+        fill: #fff;
+    }
+
+    div#setup a.add-word:hover {
+        background-color: #E0E0E0;
+        text-decoration: none;
+    }
+
+    div#setup button.submit {
+        font-size: 32px;
+        line-height: 1.5;
+        margin-top: 20px;
+        background-color: hsl(145, 62%, 24%) !important;
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ab564", endColorstr="#176336");
+        background-image: -khtml-gradient(linear, left top, left bottom, from(#2ab564), to(#176336));
+        background-image: -moz-linear-gradient(top, #2ab564, #176336);
+        background-image: -ms-linear-gradient(top, #2ab564, #176336);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2ab564), color-stop(100%, #176336));
+        background-image: -webkit-linear-gradient(top, #2ab564, #176336);
+        background-image: -o-linear-gradient(top, #2ab564, #176336);
+        background-image: linear-gradient(#2ab564, #176336);
+        border-color: #176336 #176336 hsl(145, 62%, 19%);
+    }
+
+div.setup-word .popover {
+    font-size: 14px;
+    width: 330px;
+    padding: 1px 6px;
+    text-align: left;
+}
+
+    div.setup-word h5 {
+        margin: 4px 0;
+    }
+
+    div.setup-word .popover-content {
+        padding: 2px;
+    }
+
+    div.setup-word .popover-title {
+        display: none;
+    }
+
+    div.setup-word .popover .POS-and-definitions {
+        overflow: auto;
+    }
+
+    div.setup-word .popover .POS {
+        float: left;
+        margin-right: 15px;
+        width: 20px;
+    }
+
+    div.setup-word .popover .definitions {
+        float: left;
+    }
+
+input.word-input {
+    height: 32px;
+    width: 250px;
+    font-size: 24px;
+    box-shadow: 1px 1px 5px rgba(55, 145, 84, 0.4);
+}
+
+    input.word-input:focus {
+        box-shadow: 0px 0px 8px rgba(55, 145, 84, 0.8);
+        border-color: #176337;
+        outline-color: #176337;
+        /**outline: none;
+        border:none !important;**/
+    }
+
+div#attributions {
+    margin-top: 50px;
+    font-size: 11px;
+}
+
+div#loading {
+    left: 20px;
+    right: 20px;
+    top: 80px;
+    position: absolute;
+}
+
+    div#loading .progress {
+        background-image: none;
+        background-color: rgba(55, 145, 84, 0.1);
+    }
+
+/*div#loading {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+    div#loading img {
+        width: 40px;
+        height: 40px;
+    }*/
+
+.hidden {
+    display: none;
+}
+
+.quiz-card {
+    width: 600px;
+    height: 250px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+
+    /* vertically aligned content */
+    overflow: hidden;
+    position: relative;
+    display: table;
+    position: static;
+}
+
+    /* http://www.jakpsatweb.cz/css/css-vertical-center-solution.html */
+    .quiz-card-vertical-align {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        position: static;
+    }
+
+    .quiz-card.front {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .quiz-card.back {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .quiz-card-header {
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .quiz-card-content h2 {
+        text-shadow: 2px 2px black;
+    }
+
+    .quiz-card-content b {
+        text-shadow: 0 0 10px black;
+    }
+
+    .quiz-card-footer {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+        .quiz-card-footer span {
+            color: #000;
+            padding: 8px 40px;
+        }
+
+        .quiz-card-footer span:hover {
+            color: #fff;
+            background-color: #000 !important;
+        }
+
+        .quiz-card-footer span.rank-number:nth-of-type(1) {
+            background-color: #F8F8F8;
+        }
+
+        .quiz-card-footer span.rank-number:nth-of-type(2) {
+            background-color: #E8E8E8;
+        }
+
+        .quiz-card-footer span.rank-number:nth-of-type(3) {
+            background-color: #D8D8D8;
+        }
+
+        .quiz-card-footer span.rank-number:nth-of-type(4) {
+            background-color: #C8C8C8;
+        }
+
+        .quiz-card-footer span.rank-number:nth-of-type(5) {
+            background-color: #B8B8B8;
+        }

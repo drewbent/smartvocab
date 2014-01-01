@@ -1,0 +1,139 @@
+body {
+    font-family: MuseoSans-500;
+    font-weight: normal;
+    font-style: nomral;
+    font-size: 22px;
+}
+
+h1 a {
+    color: #333;
+}
+
+    h1 a:hover {
+        text-decoration: none;
+        color: #555;
+    }
+
+div.container {
+    padding-top: 20px;
+}
+
+div#setup {
+    text-align: center;
+}
+
+    div#setup a.add-word {
+        display: block;
+        background-color: #F0F0F0;
+        width: 270px;
+        margin: auto;
+        line-height: 28px;
+        border: 1px solid #D8D8D8;
+        color: #909090;
+        font-size: 16px;
+    }
+
+    div#setup a.add-word img {
+        fill: #fff;
+    }
+
+    div#setup a.add-word:hover {
+        background-color: #E0E0E0;
+        text-decoration: none;
+    }
+
+    div#setup button.submit {
+        font-size: 32px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+div.setup-word .popover {
+    font-size: 14px;
+    width: 330px;
+    padding: 1px 6px;
+    text-align: left;
+}
+
+    div.setup-word .popover-content {
+        padding: 2px;
+    }
+
+    div.setup-word .popover-title {
+        display: none;
+    }
+
+    div.setup-word .popover .POS-and-definitions {
+        overflow: auto;
+    }
+
+    div.setup-word .popover .POS {
+        float: left;
+        margin-right: 15px;
+        width: 20px;
+    }
+
+    div.setup-word .popover .definitions {
+        float: left;
+    }
+
+input.word-input {
+    height: 32px;
+    width: 250px;
+    font-size: 24px;
+}
+
+div#attributions {
+    margin-top: 50px;
+    font-size: 11px;
+}
+
+div#loading {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -20px; /* TODO(drew): remove hardcoding */
+}
+
+    div#loading img {
+        width: 40px;
+        height: 40px;
+    }
+
+.hidden {
+    display: none;
+}
+
+.quiz-card {
+    width: 600px;
+    height: 250px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+
+    /* vertically aligned content */
+    overflow: hidden;
+    position: relative;
+    display: table;
+    position: static;
+}
+
+    /* http://www.jakpsatweb.cz/css/css-vertical-center-solution.html */
+    .quiz-card-vertical-align {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        position: static;
+    }
+
+    .quiz-card.front {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .quiz-card.back {
+        font-size: 24px;
+        line-height: 1.5;
+    }

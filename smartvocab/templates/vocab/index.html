@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="loading" class="hidden">
+    <!--<img src="{{ STATIC_URL }}images/loading.gif" class="hidden" />-->
+    <div class="progress progress-success progress-striped active">
+      <div class="bar" style="width: 100%;"></div>
+    </div>
+</div>
+
+<div id="setup">
+    <h1>Enter vocab words. Make flashcards.</h1>
+
+    <div class="accordion" id="expand-details">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#expand-details" href="#collapseOne">
+                    What is this?
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <p><b>SmartVocab</b> is a flashcards website for students wanting to study vocabulary, whether it's for their English class or the SAT®.</p>
+                    <p>First, enter as many words as you want into the text boxes below. If there are multiple definitions, click on the desired one.<br></p>
+                    <p>Then click on the green <i>Make</i> button. Click on the cards to turn them over. Evaluate your understanding of the words by choosing 1-5. Enjoy!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% for i in num_of_words %}
+        <div class="setup-word">
+            <input type="text" class="word-input" data-word-number="{{ i }}" name="word{{ i }}">
+        </div>
+    {% endfor %}
+
+    <a href="#" class="add-word">
+        Add a word
+    </a>
+
+    <button type="button" class="btn btn-primary submit">Make</button>
+</div>
+
+<div id="quiz">
+
+</div>
+{% endblock %}
